@@ -1,0 +1,28 @@
+#calculator{
+    border: 1px solid;
+    width: 300px;
+    height: 460px;
+    margin: 20px 80px;
+    background-color: pink;
+}
+
+#display{
+    margin: 10px 10px;
+    width: 90%;
+    height: 5%;
+    background-color: aqua;
+    text-align: right;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+    margin: 5px 8px;
+
+}
