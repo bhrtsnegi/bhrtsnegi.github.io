@@ -1,15 +1,15 @@
 #calculator{
     border: 1px solid;
-    width: 300px;
-    height: 460px;
+    width: 250px;
+    height: 450px;
     margin: 20px 80px;
     background-color: pink;
 }
 
 #display{
-    margin: 10px 10px;
+    margin: 15px 8px;
     width: 90%;
-    height: 5%;
+    height: 40px;
     background-color: aqua;
     text-align: right;
 }
@@ -18,11 +18,12 @@
     display: flex;
     justify-content: center;
     margin: 3px;
+    flex-wrap: wrap;
 }
 
 .button{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 5px 8px;
 
 }
