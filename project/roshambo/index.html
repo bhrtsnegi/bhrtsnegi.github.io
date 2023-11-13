@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roshambo Game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stone, Paper, Scissor Game</h1>
+    <button onclick="
+
+    //generate  number between 0 and 3
+    let randomNumber = Math.random()*3;
+    let computerChoice = '';
+    if(randomNumber  > 0 && randomNumber<=1){
+        computerChoice = 'Stone';
+    }
+    else if(randomNumber  > 1 && randomNumber<=2){
+        computerChoice = 'Paper';
+    }
+    else{
+        computerChoice = 'Scissors';
+    }
+
+    let resultMsg;
+    if(computerChoice === 'Paper'){
+        resultMsg = 'Computer Won';
+    }
+    else if(computerChoice == 'Stone'){
+        resultMsg = `It's a tie`;
+    }
+    else if(computerChoice == 'Scissors'){
+        resultMsg = 'User won';
+    }
+
+    alert(`You have chosen Bat. Computer choice is ${computerChoice}`);
+    ">Stone</button>
+    <button>Paper</button>
+    <button>Scissors</button>
+</body>
+</html>
