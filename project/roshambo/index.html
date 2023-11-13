@@ -12,19 +12,7 @@
     <h1>Stone, Paper, Scissor Game</h1>
     <button onclick="
 
-    //generate  number between 0 and 3
-    let randomNumber = Math.random()*3;
-    let computerChoice = '';
-    if(randomNumber  > 0 && randomNumber<=1){
-        computerChoice = 'Stone';
-    }
-    else if(randomNumber  > 1 && randomNumber<=2){
-        computerChoice = 'Paper';
-    }
-    else{
-        computerChoice = 'Scissors';
-    }
-
+    generateComputerChoice();
     let resultMsg;
     if(computerChoice === 'Paper'){
         resultMsg = 'Computer Won';
@@ -41,18 +29,7 @@
     <button
     onclick="
 
-    //generate  number between 0 and 3
-    randomNumber = Math.random()*3;
-    computerChoice = '';
-    if(randomNumber  > 0 && randomNumber<=1){
-        computerChoice = 'Stone';
-    }
-    else if(randomNumber  > 1 && randomNumber<=2){
-        computerChoice = 'Paper';
-    }
-    else{
-        computerChoice = 'Scissors';
-    }
+    generateComputerChoice();
 
     if(computerChoice === 'Paper'){
         resultMsg = `It's a tie`;
@@ -69,18 +46,7 @@
     <button
     onclick="
 
-    //generate  number between 0 and 3
-    randomNumber = Math.random()*3;
-    computerChoice = '';
-    if(randomNumber  > 0 && randomNumber<=1){
-        computerChoice = 'Stone';
-    }
-    else if(randomNumber  > 1 && randomNumber<=2){
-        computerChoice = 'Paper';
-    }
-    else{
-        computerChoice = 'Scissors';
-    }
+    generateComputerChoice();
 
     if(computerChoice === 'Paper'){
         resultMsg = 'You Won';
@@ -94,5 +60,7 @@
 
     alert(`You have chosen Scissors. Computer choice is ${computerChoice} and ${resultMsg}`);
     ">Scissors</button>
+
+    <script src="index.js"></script>
 </body>
 </html>
