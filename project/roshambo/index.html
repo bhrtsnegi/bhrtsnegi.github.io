@@ -33,12 +33,66 @@
         resultMsg = `It's a tie`;
     }
     else if(computerChoice == 'Scissors'){
-        resultMsg = 'User won';
+        resultMsg = 'You won';
     }
 
-    alert(`You have chosen Bat. Computer choice is ${computerChoice}`);
+    alert(`You have chosen Stone. Computer choice is ${computerChoice} and ${resultMsg}`);
     ">Stone</button>
-    <button>Paper</button>
-    <button>Scissors</button>
+    <button
+    onclick="
+
+    //generate  number between 0 and 3
+    randomNumber = Math.random()*3;
+    computerChoice = '';
+    if(randomNumber  > 0 && randomNumber<=1){
+        computerChoice = 'Stone';
+    }
+    else if(randomNumber  > 1 && randomNumber<=2){
+        computerChoice = 'Paper';
+    }
+    else{
+        computerChoice = 'Scissors';
+    }
+
+    if(computerChoice === 'Paper'){
+        resultMsg = `It's a tie`;
+    }
+    else if(computerChoice == 'Stone'){
+        resultMsg = `You Won`;
+    }
+    else if(computerChoice == 'Scissors'){
+        resultMsg = 'Computer Won';
+    }
+
+    alert(`You have chosen Paper. Computer choice is ${computerChoice} and ${resultMsg}`);
+    ">Paper</button>
+    <button
+    onclick="
+
+    //generate  number between 0 and 3
+    randomNumber = Math.random()*3;
+    computerChoice = '';
+    if(randomNumber  > 0 && randomNumber<=1){
+        computerChoice = 'Stone';
+    }
+    else if(randomNumber  > 1 && randomNumber<=2){
+        computerChoice = 'Paper';
+    }
+    else{
+        computerChoice = 'Scissors';
+    }
+
+    if(computerChoice === 'Paper'){
+        resultMsg = 'You Won';
+    }
+    else if(computerChoice == 'Stone'){
+        resultMsg = `Computer Won`;
+    }
+    else if(computerChoice == 'Scissors'){
+        resultMsg = `It's a tie`;
+    }
+
+    alert(`You have chosen Scissors. Computer choice is ${computerChoice} and ${resultMsg}`);
+    ">Scissors</button>
 </body>
 </html>
