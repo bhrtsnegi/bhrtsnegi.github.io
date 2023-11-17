@@ -1,10 +1,21 @@
-let todoList = ['buy', 'go to'];
+let todoList = [
+            {
+                item: 'buy', 
+                dueDate: '04/10/2023'
+            }, 
+            {
+                item: 'go to', 
+                dueDate: '05/10/2023'
+            }
+        ];
 displayItems();
 
 function addToDo(){
     let inputElement = document.querySelector('#todo-input');
+    let dateElement = document.querySelector('#todo-date');
     let todoItem = inputElement.value;
-    todoList.push(todoItem);
+    let todoDate = dateElement.value;
+    todoList.push({item: todoItem, dueDate: todoDate}); 
     inputElement.value = '';
 
     displayItems();
@@ -15,15 +26,14 @@ function displayItems() {
     let newHtml = '';
     for(let i=0; i< todoList.length; i++){
         newHtml += `
-        <div>
-            <span> ${todoList[i]} </span>
+            <span> ${todoList[i].item} </span>
+            <span> ${todoList[i].dueDate} </span>
             <button 
                 onclick=
                     "
                         todoList.splice(${i},1);
                         displayItems();    
                     ">Delete</button>
-        </div>
         `;
     }
     containerElement.innerHTML = newHtml;
