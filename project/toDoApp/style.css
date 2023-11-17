@@ -1,12 +1,12 @@
-body{
+body {
     font-family: Arial;
 }
 
-#main-heading{
+#main-heading {
     text-align: center;
 }
 
-.todo-container{
+.todo-container {
     display: grid;
     grid-template-columns: 200px, 150px, 100px;
 }
