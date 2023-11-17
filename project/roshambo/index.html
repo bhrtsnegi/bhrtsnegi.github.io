@@ -10,26 +10,44 @@
 </head>
 <body>
     <h1>Stone, Paper, Scissor Game</h1>
-    <button onclick="
+
+    <button class="choice-button" onclick="
 
     let computerChoice =generateComputerChoice();
     let resultMsg = getResult('Stone',computerChoice);
     showResult('Stone', computerChoice, resultMsg);
-    ">Stone</button>
-    <button
+    ">
+    Stone
+    <!-- <img src="images/stone.png" alt="stone image" class="choice-image"> -->
+    </button>
+
+    <button class="choice-button"
     onclick="
 
     computerChoice =generateComputerChoice();
     resultMsg = getResult('Paper', computerChoice);
     showResult('Paper', computerChoice, resultMsg);
-    ">Paper</button>
-    <button
+    ">
+    Paper
+    <!-- <img src="images/paper.png" alt="paper image" class="choice-image"> -->
+    </button>
+
+    <button class="choice-button"
     onclick="
 
     computerChoice =generateComputerChoice();
     resultMsg = getResult('Scissors', computerChoice);
     showResult('Scissors', computerChoice, resultMsg);
-    ">Scissors</button>
+    ">
+    Scissors
+    <!-- <img src="images/scissors.png" alt="scissors image" class="choice-image"> -->
+    </button>
+
+
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
 
     <button onclick="localStorage.clear()
     resetScore();
