@@ -14,6 +14,5 @@ function displayItems(){
     let containerElement = document.querySelector('.todo-container');
     containerElement.innerText = '';
     for(let i=0; i< todoList.length; i++)
-        containerElement.innerText = displayElement.innerText + '\n' + todoList[i];
-    
+        containerElement.innerText = containerElement.innerText + '\n' + todoList[i];
 }
