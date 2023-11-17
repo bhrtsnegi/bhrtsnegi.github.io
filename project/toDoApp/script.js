@@ -25,9 +25,10 @@ function displayItems() {
     let containerElement = document.querySelector('.todo-container');
     let newHtml = '';
     for(let i=0; i< todoList.length; i++){
+        let {item, dueDate} = todoList[i];
         newHtml += `
-            <span> ${todoList[i].item} </span>
-            <span> ${todoList[i].dueDate} </span>
+            <span> ${item} </span>
+            <span> ${dueDate} </span>
             <button 
                 onclick=
                     "
