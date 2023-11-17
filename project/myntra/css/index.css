@@ -231,3 +231,65 @@ header {
     text-align: end;
     padding: 15px;
 }
+
+.items-container{
+    width: 80%;
+    margin: 40px 10%;
+}
+
+.item-container{
+    width: 200px;
+}
+
+.item-image{
+    width: 100%;
+}
+
+.rating{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.company-name{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin: 15px 6px 0px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item-name{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+
+}
+
+.price{
+
+}
+
+.current-price{
+
+}
+
+.original-price{
+
+}
+
+.discount{
+
+}
+
+.btn-item-bag{
+
+}
