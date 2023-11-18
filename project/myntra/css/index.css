@@ -189,7 +189,7 @@ header {
     font-weight: 700;
 }
 
-.category-items {
+.category-items, .items-container {
     width: 80%;
     margin: 50px 10%;
     display: flex;
@@ -239,6 +239,7 @@ header {
 
 .item-container{
     width: 250px;
+    margin: 10px;
 }
 
 .item-image{
