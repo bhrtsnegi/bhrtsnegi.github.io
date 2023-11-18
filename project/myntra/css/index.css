@@ -238,7 +238,7 @@ header {
 }
 
 .item-container{
-    width: 200px;
+    width: 250px;
 }
 
 .item-image{
@@ -275,21 +275,40 @@ header {
 }
 
 .price{
-
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #282c3f;
+    white-space: nowrap;
 }
 
 .current-price{
-
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
 }
 
 .original-price{
-
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
 }
 
 .discount{
-
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
 }
 
-.btn-item-bag{
-
+.btn-add-bag{
+    width: 100%;
+    margin-top: 8px;
+    font-size: 18px;
+    background-color: lightgreen;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
 }
