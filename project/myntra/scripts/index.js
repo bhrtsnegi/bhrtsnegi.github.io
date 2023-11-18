@@ -51,3 +51,4 @@ function addToBag(itemId){
     displayBagIcon();
 }
 
+ 
