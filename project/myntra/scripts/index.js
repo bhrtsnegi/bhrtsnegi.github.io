@@ -20,7 +20,7 @@ function displayBagIcon(){
 }
 function displayItemsHomepage(){
     let itemsContainerElement = document.querySelector('.items-container');
-
+    if(!itemsContainerElement)  return;
     let innerHtml = '';
     items.forEach(item =>{
         innerHtml += `
