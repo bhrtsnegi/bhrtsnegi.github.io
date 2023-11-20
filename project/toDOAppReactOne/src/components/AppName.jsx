@@ -1,5 +1,7 @@
+import "../App.css";
+
 function AppName(){
   return <h1>To Do App</h1> 
 }
 
-export default AppName;
+export default AppName; 
