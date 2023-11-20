@@ -3,3 +3,19 @@ h1{
   font-size: 40px;
   margin: 10px 20px 0 0;
 }
+
+input{
+  width: 100%;
+}
+
+.items-container{
+  text-align: left;
+}
+
+.list-btn{
+  width: 80px;
+}
+
+.item-row{
+  margin: 10px 5px;
+}

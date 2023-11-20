@@ -5,12 +5,13 @@ import "./App.css";
 
 function App() {
 
-  return (<center class="todo-container">
+  return (<center className="todo-container">
     <AppName />
-    <AddToDO />
-    <ToDoItem />
-    <ToDoItem />
-        
+    <div className="items-container">
+      <AddToDO />
+      <ToDoItem />
+      <ToDoItem />
+    </div>
   </center>
 )}
 

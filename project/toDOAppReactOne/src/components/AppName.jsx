@@ -1,5 +1,3 @@
-import "../App.css";
-
 function AppName(){
   return <h1>To Do App</h1> 
 }
