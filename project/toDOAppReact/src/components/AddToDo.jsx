@@ -1,12 +1,14 @@
-function AddToDO(){
+import styles from "./AddToDo.module.css";
+
+function AddToDo(){
   return (
   <div className="container">
     <div className="row item-row">
       <div className="col-6">
-        <input type="text" placeholder="Enter Task Here" />
+        <input className={styles.taskInput} type="text" placeholder="Enter Task Here" />
       </div>
       <div className="col-4">
-        <input type="date" />
+        <input className={styles.taskInput} type="date" />
       </div>
       <div className="col-2">
         <button type="button" className="btn btn-success list-btn">Add</button>
@@ -16,4 +18,4 @@ function AddToDO(){
     );
 }
 
-export default AddToDO;
+export default AddToDo;

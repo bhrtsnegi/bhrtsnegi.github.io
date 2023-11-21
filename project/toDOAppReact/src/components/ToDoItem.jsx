@@ -1,7 +1,5 @@
-function ToDoItem(){
+function ToDoItem({taskName, taskDate}){
 
-  let taskName = 'Go To College';
-  let taskDate = '04/10/2023';
   return(
     <div className="container">
         <div className="row item-row">
