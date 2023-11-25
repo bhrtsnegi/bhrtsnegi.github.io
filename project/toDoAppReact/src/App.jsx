@@ -7,37 +7,27 @@ import { useState } from "react";
 
 function App() {
 
-  const initialToDoItems = [
-    {
-      name: 'Buy Milk',
-      dueDate: '10/04/2023',
-    },
-    {
-      name: 'Go To Class',
-      dueDate: '10/04/2023',
-    },
-    {
-      name: 'Sleep',
-      dueDate: '10/04/2023',
-    },
-  ];
+  const [todoItems, setToDoItems] = useState([]);
 
-  const [todoItems, setToDoItems] = useState(initialToDoItems);
+  const handleNewItem = (itemName, itemDueDate) => {
+    const newTodoItems = [
+      ...todoItems,
+      { name: itemName, dueDate: itemDueDate },
+    ];
+    setToDoItems(newTodoItems);
+  };
 
-const handleNewItem = (itemName, itemDueDate) => {
-  const newTodoItems = [
-    ...todoItems, { name: itemName, dueDate: itemDueDate} 
-  ]
-  setToDoItems(newTodoItems);
-}
-
+  const handleDeleteItem = (toDoItemName) =>{
+    const newTodoItems = todoItems.filter(item => item.name !== toDoItemName);
+    setToDoItems(newTodoItems);
+  };
   return (
     <center className="todo-container">
       <AppName />
-      <AddToDo onNewItem= {handleNewItem}/>
-      <ToDoItems todoItems={todoItems}/>
-      <WelcomeMessage></WelcomeMessage>
-    </center> 
+      <AddToDo onNewItem={handleNewItem} />
+      <ToDoItems todoItems={todoItems} onDeleteClick= {handleDeleteItem} />
+      {todoItems.length === 0 && <WelcomeMessage></WelcomeMessage>}
+    </center>
   );
 }
 

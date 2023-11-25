@@ -1,6 +1,7 @@
+import styles from "./WelcomeMessage.module.css";
 const WelcomeMessage = () =>{
   return(
-    <p>Enjoy Your Day</p>
+    <p className={styles.welcome}> No Task for now.</p>
   );
 }
 
