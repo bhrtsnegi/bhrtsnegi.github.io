@@ -1,3 +1,5 @@
+import { MdDelete } from "react-icons/md";
+
 function ToDoItem({ taskName, taskDate, onDeleteClick }) {
   return (
     <div className="container">
@@ -6,12 +8,11 @@ function ToDoItem({ taskName, taskDate, onDeleteClick }) {
         <div className="col-4">{taskDate}</div>
         <div className="col-2">
           <button type="button list-btn" className="btn btn-danger list-btn" onClick= {() => onDeleteClick(taskName)}>
-            Delete
+            <MdDelete />
           </button>
         </div>
       </div>
     </div>
   );
 }
-
 export default ToDoItem;

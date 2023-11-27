@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoAddCircle } from "react-icons/io5";
 import styles from "./AddToDo.module.css";
 
 function AddToDo({ onNewItem }) {
@@ -8,21 +9,21 @@ function AddToDo({ onNewItem }) {
 
   const handleNameChange = (event) => {
     setToDOName(event.target.value);
-
   };
 
   const handleDateChange = (event) => {
     setDueDate(event.target.value);
   };
 
-  const handleAtButtonClick = () => {
+  const handleAtButtonClick = (event) => {
+    event.preventDefault();
     onNewItem(toDoName, dueDate);
     setDueDate("");
     setToDOName("");
   };
   return (
     <div className="container">
-      <div className="row item-row">
+      <form className="row item-row" onSubmit={handleAtButtonClick}>
         <div className="col-6">
           <input
             className={styles.taskInput}
@@ -41,15 +42,11 @@ function AddToDo({ onNewItem }) {
           />
         </div>
         <div className="col-2">
-          <button
-            type="button"
-            className="btn btn-success list-btn"
-            onClick={handleAtButtonClick}
-          >
-            Add
+          <button className="btn btn-success list-btn">
+            <IoAddCircle />
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 }
