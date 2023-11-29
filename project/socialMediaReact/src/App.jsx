@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Sidebar from './components/Sidebar';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <>
-      <Header></Header>
+    <div className="app-container">
       <Sidebar></Sidebar>
-      <Footer></Footer>
-    </>
+      <div className="content">
+        <Header></Header>
+        <Footer></Footer>
+      </div>
+    </div>
   );
 }
 
-export default App
+export default App;
