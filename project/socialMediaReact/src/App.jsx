@@ -8,13 +8,15 @@ import CreatePost from "./components/CreatePost";
 import PostList from "./components/PostList";
 
 function App() {
+
+  const [selectedTab, setSelectedTab] = useState("CreatePost");
+
   return (
     <div className="app-container">
-      <Sidebar></Sidebar>
+      <Sidebar selectedTab = {selectedTab}></Sidebar>
       <div className="content">
         <Header></Header>
-        <CreatePost></CreatePost>
-        <PostList></PostList>
+        {selectedTab == "Home" ? (<PostList></PostList>) : (<CreatePost></CreatePost>) }
         <Footer></Footer>
       </div>
     </div>
