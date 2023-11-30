@@ -8,6 +8,6 @@ const PostList = () => {
       <Post></Post>
     </>
   );
-}
+};
 
 export default PostList;
