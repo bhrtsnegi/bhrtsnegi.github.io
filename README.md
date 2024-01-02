@@ -1,2 +1,2 @@
 # bhrtsnegi.github.io
-This is my portfolio for a better understanding of me to all the viewers
+A web resume which tells about my work and experience as a web view of the resume. Made with html, css and js.
