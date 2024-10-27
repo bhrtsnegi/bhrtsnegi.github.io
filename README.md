@@ -3,4 +3,4 @@
 Hi, I'm Bharat Negi, a upcoming SDE passionate about Software Engineering. This portfolio showcases my projects, skills, and experiences.
 
 
-Thanks for visiting my portfolio! Feel free to reach out for collaboration or questions.
+Thanks for visiting my portfolio.
