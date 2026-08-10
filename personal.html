@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bharat Negi — Beyond Code. SiliconSweat fitness, travel, music, and life outside software engineering.">
+    <meta name="author" content="Bharat Negi">
+    
+    <title>Bharat Negi | Beyond Code (@siliconsweat)</title>
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+    <!-- Luxury Dark Studio Personal CSS -->
+    <link rel="stylesheet" href="assets/css/personal.css">
+</head>
+<body>
+
+    <!-- Glass Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="back-btn">
+                <i class="ti-arrow-left"></i> Back to Professional
+            </a>
+
+            <div class="nav-brand-title">Bharat Negi <span style="color: var(--accent-gold); font-size: 0.9rem;">/ Beyond Code</span></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge-tag"><i class="ti-heart"></i> Personal Journal</span>
+                <h1 class="hero-title">Beyond <span class="gradient-text">Code.</span></h1>
+                <p class="hero-subtitle" id="personal-hero-subtitle">
+                    The things I build, chase, enjoy and obsess over when I'm not writing code.
+                </p>
+
+                <div class="hero-badges">
+                    <span class="pill-badge" style="border-color: rgba(244, 63, 94, 0.4); color: var(--accent-rose);">🏋️‍♂️ SILICONSWEAT</span>
+                    <span class="pill-badge">🏔️ TRAVEL</span>
+                    <span class="pill-badge">🎸 MUSIC</span>
+                    <span class="pill-badge">☕ LIFE</span>
+                </div>
+
+                <a href="https://www.instagram.com/siliconsweat" target="_blank" rel="noopener" class="instagram-btn instagram-link-target">
+                    Follow @siliconsweat <i class="ti-arrow-top-right"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Identity Intro Card -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="glass-card">
+                <p style="font-size: 1.25rem; font-weight: 500; color: var(--text-main); line-height: 1.7;" id="personal-intro-text">
+                    Software is what I do. SiliconSweat is where discipline meets physical strength.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter Tabs -->
+    <div class="container">
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Interests</button>
+            <button class="filter-btn" data-filter="fitness">SiliconSweat & Fitness</button>
+            <button class="filter-btn" data-filter="travel">Travel & Mountains</button>
+            <button class="filter-btn" data-filter="music">Music & Guitar</button>
+            <button class="filter-btn" data-filter="lifestyle">Life & Coffee</button>
+        </div>
+    </div>
+
+    <!-- 01 — FITNESS Section -->
+    <section id="fitness" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">01 — SILICONSWEAT</span>
+                <h2 class="section-title">Strength & Discipline</h2>
+                <p class="section-subtitle">Training, bodyweight flow, and daily athletic consistency.</p>
+            </div>
+
+            <div class="glass-card" style="margin-bottom: 2.5rem;">
+                <h3 style="font-size: 1.75rem; margin-bottom: 0.75rem;">SiliconSweat — Where Code Meets Sweat.</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+                    Fitness is my daily reset. Discipline built through strength training and endurance flow carries over directly into complex problem solving.
+                </p>
+
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;" id="fitness-goals-list">
+                    <!-- Goals populated dynamically from personalData.js -->
+                </ul>
+            </div>
+
+            <!-- Gallery Grid with Lightbox Zoom -->
+            <div class="gallery-grid" id="fitness-gallery-grid">
+                <!-- Gallery items populated dynamically from personalData.js -->
+            </div>
+
+            <div style="text-align: center; margin-top: 2.5rem;">
+                <a href="https://www.instagram.com/siliconsweat" target="_blank" rel="noopener" class="instagram-btn instagram-link-target">
+                    See more on @siliconsweat <i class="ti-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 — TRAVEL Section -->
+    <section id="travel" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">02 — TRAVEL</span>
+                <h2 class="section-title">Travel Journal</h2>
+                <p class="section-subtitle">Exploring mountain trails, cultural heritage, and quiet landscapes.</p>
+            </div>
+
+            <div class="travel-grid" id="travel-grid">
+                <!-- Travel cards populated dynamically from personalData.js -->
+            </div>
+
+            <!-- Visual Travel Timeline -->
+            <div class="glass-card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.75rem;">Travel Timeline</h3>
+                <div class="travel-timeline" id="travel-timeline">
+                    <!-- Timeline nodes populated dynamically from personalData.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 — MUSIC Section -->
+    <section id="music" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">03 — MUSIC</span>
+                <h2 class="section-title">Acoustic Sessions</h2>
+                <p class="section-subtitle">Trading the keyboard for a guitar and fingerstyle riffs.</p>
+            </div>
+
+            <!-- Interactive Web Audio Acoustic Synthesizer Player -->
+            <div class="music-player-card" style="margin-bottom: 2.5rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <span class="badge-tag" style="background: rgba(244, 63, 94, 0.1); border-color: rgba(244, 63, 94, 0.3); color: var(--accent-rose);">
+                            <i class="ti-music-alt"></i> Web Audio Synthesizer
+                        </span>
+                        <h3 style="font-size: 1.75rem; margin-top: 0.4rem;">Sometimes I trade the keyboard for a guitar.</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-muted);">Click play below to generate an acoustic C-major chord progression using Web Audio API.</p>
+                    </div>
+
+                    <div class="audio-player-controls">
+                        <button class="play-pause-btn" id="play-pause-btn" title="Play Acoustic Chord">
+                            <i class="ti-control-play"></i>
+                        </button>
+                        <div class="audio-equalizer">
+                            <div class="eq-bar"></div>
+                            <div class="eq-bar"></div>
+                            <div class="eq-bar"></div>
+                            <div class="eq-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-grid" id="music-grid">
+                <!-- Music cards populated dynamically from personalData.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 — LIFESTYLE Section -->
+    <section id="lifestyle" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-tag">04 — LIFESTYLE</span>
+                <h2 class="section-title">Things I Like</h2>
+                <p class="section-subtitle">Interests, habits, and hobbies that fuel my everyday life.</p>
+            </div>
+
+            <div class="lifestyle-grid" id="lifestyle-grid">
+                <!-- Lifestyle cards populated dynamically from personalData.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 05 — INSTAGRAM Footer Section -->
+    <section class="section">
+        <div class="container">
+            <div class="glass-card" style="text-align: center; padding: 4rem 2rem; border-color: rgba(245, 158, 11, 0.3); box-shadow: var(--shadow-glow);">
+                <span class="badge-tag" style="margin-bottom: 1rem;">INSTAGRAM</span>
+                <h2 style="font-size: 2.75rem; margin-bottom: 0.75rem;">More of my life, one post at a time.</h2>
+                <p style="font-size: 1.25rem; color: var(--accent-gold); font-weight: 700; margin-bottom: 2rem;">@siliconsweat</p>
+
+                <div>
+                    <a href="https://www.instagram.com/siliconsweat" target="_blank" rel="noopener" class="instagram-btn instagram-link-target">
+                        Follow @siliconsweat <i class="ti-arrow-top-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Bharat Negi (@siliconsweat). Beyond Code.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Lightbox Preview Modal with Navigation -->
+    <div id="photo-lightbox" class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close-btn" id="lightbox-close" title="Close Lightbox">
+                <i class="ti-close"></i>
+            </button>
+            <button class="lightbox-close-btn" id="lightbox-prev" style="right: auto; left: 1rem;" title="Previous Photo">
+                <i class="ti-angle-left"></i>
+            </button>
+            <button class="lightbox-close-btn" id="lightbox-next" style="right: 4rem;" title="Next Photo">
+                <i class="ti-angle-right"></i>
+            </button>
+
+            <div class="lightbox-img-wrapper">
+                <img src="" id="lightbox-img" alt="Lightbox Preview" class="lightbox-img">
+            </div>
+            <div class="lightbox-details">
+                <h3 id="lightbox-title" class="lightbox-title"></h3>
+                <p id="lightbox-caption" class="lightbox-caption"></p>
+                <a href="https://www.instagram.com/siliconsweat" target="_blank" rel="noopener" class="instagram-btn instagram-link-target" style="padding: 0.6rem 1.4rem; font-size: 0.875rem;">
+                    View on @siliconsweat <i class="ti-arrow-top-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Module Renderer -->
+    <script type="module" src="assets/js/personal.js"></script>
+
+</body>
+</html>
